@@ -1,0 +1,51 @@
+componentes:
+
+props de entradas y salidas.
+ciclo de vida
+
+{{title}}interpolacion 
+one way data binding
+two way data binding
+formularios reactivos/template driven form
+
+<input type="text" [(ngModel)]="title" /> [(ngModel)] es una directiva bidireccional, cuando cambia title cambia el valor del input y cuando cambia input cambia el valor de title
+
+
+comandos:
+ng generate component shared/header: me crea un nuevo componente header dentro de la carpeta shared dentro de app.con todos los archivos(ng g c shared/header)
+crear componente con su modulo,la ruta ,y endonde crear la ruta .todo
+ng g m(modulo) pages/products -m(me escribo el modulo en app modules)=app(le digo en donde lo injecte) --route products(creame la ruta products)
+
+angular material :
+comando schematic
+ng add @angular/material
+
+
+rutas en angular:
+router outlet:es una directiva para aplicar rutas a componentes determinados,puede haber varios
+
+que es un service : un service es una capa que a;dimos para manejar los datos.
+un servicio es un proveedor de datos,que mantiene logica de negocio
+los servicios seran consumidos  por los componentes y tendran la responsabilidad de acceder a la informacion y de manipularla
+
+ng g service (ruta empieza adentro del file app...)/ service --skip-tests
+observable:En Angular, un Observable es una forma de manejar flujos de datos asincrónicos. Puedes pensar en un Observable como una secuencia de eventos que se pueden observar y suscribirse para recibir notificaciones cuando ocurran esos eventos.
+
+Los Observables se utilizan ampliamente en Angular para manejar operaciones asíncronas, como solicitudes HTTP, eventos del DOM, temporizadores, entre otros. Proporcionan una forma de gestionar y manipular flujos de datos de manera eficiente y reactiva.
+
+Algunas características clave de los Observables en Angular son:
+
+Emisión de eventos: Los Observables emiten eventos o valores en el tiempo, y los componentes o servicios pueden suscribirse a esos eventos para recibir los valores cuando se emiten.
+
+Operaciones de transformación y manipulación: Los Observables ofrecen una amplia gama de operadores que permiten transformar, filtrar, combinar y manipular los datos emitidos de manera flexible.
+
+Soporte para operaciones asíncronas: Los Observables manejan operaciones asíncronas de forma natural, lo que significa que puedes trabajar fácilmente con flujos de datos que no se resuelven de inmediato, como solicitudes HTTP o eventos del usuario.
+
+Cancelación y gestión de suscripciones: Los Observables permiten cancelar o desuscribirse de un flujo de datos en cualquier momento, lo que ayuda a evitar fugas de memoria y a liberar recursos cuando ya no se necesitan.
+
+Al utilizar Observables en Angular, puedes construir aplicaciones reactivas y manejar de manera eficiente flujos de datos asíncronos, lo que te permite crear componentes y servicios más flexibles, responsivos y con mejor rendimiento.
+
+
+pipe:el cometido principal del pipe es transofrmar data. Los pipies reciben un dato y pueden transformar ese dato.
+
+observable??
